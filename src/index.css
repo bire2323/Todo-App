@@ -1,0 +1,8 @@
+.c-cb{
+    display: flex;
+
+}
+.c-cb p{
+   color: rgb(66, 165, 169);
+   float: right;
+}
