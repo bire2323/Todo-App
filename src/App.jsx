@@ -13,6 +13,9 @@ const FILTER_MAP = {
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
+  useEffect(() => {
+    window.scrollTo({ top: "0", behavior: "smooth" });
+  }, []);
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("todo-tasks");
     return savedTasks ? JSON.parse(savedTasks) : props.tasks;
