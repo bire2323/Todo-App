@@ -1,12 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-const data = [{ id: "todo-0", name: "Eat", completed: true },
-              { id: "todo-1", name: "Sleep", completed: false },
-              {id: "todo-2", name: "Repeat", completed: false}]
-createRoot(document.getElementById('root')).render(
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+const data = [{ id: "todo-0", name: "Go to church in 12pm!", completed: true }];
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App tasks={data} />
-  </StrictMode>,
-)
+  </StrictMode>
+);
