@@ -11,7 +11,7 @@ function Form(props) {
   }
   return (
     <>
-      <h1>TodoList</h1>
+      <h1 style={{ fontSize: "32px" }}>TodoList</h1>
       <form onSubmit={handleSubmit}>
         <h2 className="label-wrapper">
           <label htmlFor="new-todo-input" className="label__lg">
