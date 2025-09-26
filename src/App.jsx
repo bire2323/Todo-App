@@ -86,25 +86,39 @@ function App(props) {
   const noun = taskList.length === 1 ? `task` : `tasks`;
   const headingText = `${taskList.length} ${noun} remaining`;
   return (
-    <div
-      className="todoapp stack-large "
-      style={{
-        margin: "20px",
-        paddingLeft: "15px",
-        paddingRight: "15px",
-      }}
-    >
-      <Form addTask={addTask} />
-      <div className="filters btn-group stack-exception">{filterList}</div>
-      <h2 id="list-heading">{headingText}</h2>
-      <ul
-        role="list"
-        className="todo-list stack-large stack-exception"
-        aria-labelledby="list-heading"
+    <>
+      <div
+        className="todoapp stack-large "
+        style={{
+          margin: "20px",
+          paddingLeft: "15px",
+          paddingRight: "15px",
+        }}
       >
-        {taskList}
-      </ul>
-    </div>
+        <Form addTask={addTask} />
+        <div className="filters btn-group stack-exception">{filterList}</div>
+        <h2 id="list-heading">{headingText}</h2>
+        <ul
+          role="list"
+          className="todo-list stack-large stack-exception"
+          aria-labelledby="list-heading"
+        >
+          {taskList}
+        </ul>
+      </div>
+      <div
+        style={{
+          height: "30vh",
+          fontSize: "28px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "end",
+          paddingBottom: "30px",
+        }}
+      >
+        developed by B.D @ version 1.0.0
+      </div>
+    </>
   );
 }
 
